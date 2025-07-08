@@ -175,23 +175,24 @@ export default function BadmintonPairingApp() {
         </div>
       ))}
 
+
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">ตั้งค่าการลงสนาม</h2>
         <div className="flex flex-wrap gap-4 items-end">
           <label>จำนวนสนาม:
-            <input type="number" value={numCourts} onChange={(e) => setNumCourts(Number(e.target.value))} className="border p-2 w-16 ml-2" />
+            <input type="number" value={numCourts} onChange={(e) => setNumCourts(Number(e.target.value))} className="border rounded p-2 w-16 ml-2" />
           </label>
           <label>จำนวนชั่วโมง:
-            <input type="number" value={hoursPlayed} onChange={(e) => setHoursPlayed(Number(e.target.value))} className="border p-2 w-16 ml-2" />
+            <input type="number" value={hoursPlayed} onChange={(e) => setHoursPlayed(Number(e.target.value))} className="border rounded p-2 w-16 ml-2" />
           </label>
           <label>ค่าสนามต่อชั่วโมง:
-            <input type="number" value={courtRate} onChange={(e) => setCourtRate(Number(e.target.value))} className="border p-2 w-20 ml-2" />
+            <input type="number" value={courtRate} onChange={(e) => setCourtRate(Number(e.target.value))} className="border rounded p-2 w-20 ml-2" />
           </label>
           <label>จำนวนลูก:
-            <input type="number" value={shuttleCount} onChange={(e) => setShuttleCount(Number(e.target.value))} className="border p-2 w-16 ml-2" />
+            <input type="number" value={shuttleCount} onChange={(e) => setShuttleCount(Number(e.target.value))} className="border rounded p-2 w-16 ml-2" />
           </label>
           <label>ราคาต่อลูก:
-            <input type="number" value={shuttlePrice} onChange={(e) => setShuttlePrice(Number(e.target.value))} className="border p-2 w-20 ml-2" />
+            <input type="number" value={shuttlePrice} onChange={(e) => setShuttlePrice(Number(e.target.value))} className="border rounded p-2 w-20 ml-2" />
           </label>
           <Button onClick={generateSchedule}>สร้างคิวลงสนาม</Button>
         </div>
